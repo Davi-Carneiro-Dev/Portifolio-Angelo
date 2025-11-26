@@ -1,0 +1,210 @@
+/* ===========================
+   RESET DO NAVEGADOR
+=========================== */
+
+* { margin: 0; 
+    padding: 0; 
+    box-sizing: 
+    border-box; }
+
+/* ===========================
+   GLOBAL
+=========================== */
+
+body {  font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        color: #222;    
+        border-radius: 15px;}
+
+header { max-width: 1200px;
+         background-color: #22ec98;  
+         margin: 20px auto; 
+         padding: 20px 0; }
+
+main { max-width: 1200px; 
+       background-color: aqua;
+       margin: 20px auto; 
+       padding: 0 20px;  }
+
+footer { max-width: 1200px;
+         background-color: #aaff20; ; 
+         padding: 20px 0; 
+         margin: 20px auto;}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header .conteudo-header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px;  }
+
+header .menu { margin-left: auto;}
+
+header .menu a { padding: 10px 15px;}
+
+/* ===========================
+   APRESENTAÇÃO
+=========================== */
+
+#apresentacao {
+    display: flex;
+    align-items: center;   
+    gap: 40px;           
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+#apresentacao img {
+    width: 450px;       
+    max-width: 100%;    
+    border-radius: 15px;
+}
+
+#apresentacao div h1, #apresentacao div p, #apresentacao div h4 { margin: 5px 0;}
+
+/* ===========================
+   SOBRE
+=========================== */
+
+#sobre {
+    display: flex;
+    align-items: center;   
+    gap: 40px;           
+    padding: 20px;
+    margin-bottom: 60px;
+}
+.conteudo-sobre {
+    display: flex;
+    align-items: center;   
+    justify-content: center;
+    gap: 40px;
+    margin: 0px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.sobre-lado-direito img {
+    width: 450px;
+    max-width: 100%;   
+    height: auto;    
+    border-radius: 15px;
+}
+
+.sobre-lado-esquerdo-topo {
+    text-align: left;
+    margin-bottom: 30px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sobre-lista ul li {
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+ 
+/* ===========================
+    PROJETOS
+=========================== */
+
+#projetos {           
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+#projetos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#projetos nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#projetos nav img {
+    width: 275px;
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+#projetos nav div h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* ===========================
+    CONTATO
+=========================== */
+
+#contato {
+    display: flex;
+    align-items: center;   
+    gap: 40px;           
+    padding: 20px;
+}
+.contato-conteudo {         /* lado direito*/
+    display: flex; 
+    flex-direction: column;
+    text-align: left;
+    gap: 40px;
+    margin: auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+.contato-imagem img {       /* lado esquerdo*/
+    width: 450px;       
+    max-width: 100%;    
+    border-radius: 15px;
+}
+
+/* ===========================
+    FOOTER
+=========================== */
+
+.footer-conteudo { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+
+}
+
+.footer-dayane-felix {
+    
+}
+
+.footer_portifolio-2025 { 
+    
+}
+
+.footer-secoes {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 20px;
+    gap: 40px
+}
+
+.footer-redes-sociais nav {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-projetos nav {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-contato nav {
+    display: flex;
+    flex-direction: column;
+    
+}
