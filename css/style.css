@@ -11,161 +11,281 @@
    GLOBAL
 =========================== */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {  font-family: Arial, sans-serif;
         background-color: #ffffff;
         color: #222;    
         border-radius: 15px;}
 
-header { max-width: 1200px;
-         background-color: #22ec98;  
-         margin: 20px auto; 
-         padding: 20px 0; }
-
-main { max-width: 1200px; 
-       background-color: aqua;
-       margin: 20px auto; 
-       padding: 0 20px;  }
-
-footer { max-width: 1200px;
-         background-color: #aaff20; ; 
-         padding: 20px 0; 
-         margin: 20px auto;}
+main { background-color: #cbbbab; }
 
 /* ===========================
    HEADER
 =========================== */
 
-header .conteudo-header { 
+header {
+    margin: 40px;
+    background-color: #ffffff;
+}
+
+.conteudo-header { 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
     max-width: 1200px; 
     margin: 0 auto; 
-    padding: 0 20px;  }
+    padding: 0 20px;  
+}
 
-header .menu { margin-left: auto;}
-
-header .menu a { padding: 10px 15px;}
+.menu a { padding: 10px 15px;}
 
 /* ===========================
-   APRESENTAÇÃO
+   HOME PAGE
 =========================== */
 
-#apresentacao {
+#home {
     display: flex;
-    align-items: center;   
-    gap: 40px;           
-    padding: 20px;
-    margin-bottom: 60px;
+    min-height: 100vh;
+    max-height: 100vh;
 }
 
-#apresentacao img {
-    width: 450px;       
-    max-width: 100%;    
-    border-radius: 15px;
+.home-imagem {
+    width: 40%;
+    overflow: hidden;
 }
 
-#apresentacao div h1, #apresentacao div p, #apresentacao div h4 { margin: 5px 0;}
+.home-imagem img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-right: #ffffff 25px solid;
+}
 
-/* ===========================
-   SOBRE
-=========================== */
-
-#sobre {
+.home-conteudo {
+    width: 60%;
+    background: #cbbbab; 
+    padding: 120px 80px;
+    color: #ffffff;
     display: flex;
-    align-items: center;   
-    gap: 40px;           
-    padding: 20px;
-    margin-bottom: 60px;
-}
-.conteudo-sobre {
-    display: flex;
-    align-items: center;   
-    justify-content: center;
-    gap: 40px;
-    margin: 0px auto;
-    max-width: 1200px;
-    padding: 20px;
-}
-
-.sobre-lado-direito img {
-    width: 450px;
-    max-width: 100%;   
-    height: auto;    
-    border-radius: 15px;
-}
-
-.sobre-lado-esquerdo-topo {
-    text-align: left;
-    margin-bottom: 30px;
-    max-width: 450px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.sobre-lista ul li {
     flex-direction: column;
-    margin-bottom: 15px;
+    justify-content: center;
 }
- 
+
+.home-conteudo h1 {
+    font-size: 84px;
+    line-height: 1.1;
+    margin-bottom: 40px;
+}
+
+.home-conteudo .sub {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: #f3eee9;
+}
+
+.home-conteudo .author {
+    font-size: 20px;
+    color: #fff;
+}
+
 /* ===========================
-    PROJETOS
+   ABOUT
 =========================== */
 
-#projetos {           
-    margin-top: 40px;
-    margin-bottom: 100px;
+#about {
+    display: flex;
+    margin-left: 40px;
+    min-height: 100vh;
+    max-height: 100vh;
 }
 
-#projetos h2 {
-    text-align: center;
+.about-conteudo {
+    width: 100%;
+    background: #ffffff; 
+    color: #200000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-lado-esquerdo {
+    width: 50%;
+    padding: 80px;
+    object-fit: cover;
+}
+
+.about-lado-esquerdo-topo {
+    margin-bottom: 40px;
+}
+
+.about-lado-esquerdo-topo h2 {
+    font-size: 36px;
     margin-bottom: 20px;
 }
-#projetos nav {
+
+.about-listas {
     display: flex;
+    gap: 40px;
+}
+
+.about-lista h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+
+}
+
+.about-lado-direito {
+    height: auto;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 20px;
-    flex-wrap: wrap;
+    padding: 20px;
 }
-#projetos nav img {
-    width: 275px;
+
+ .about-lado-direito img {
+    width: 100%;
     max-width: 100%;
-    border-radius: 10px;
-    transition: transform 0.3s;
+    object-fit: cover
 }
-#projetos nav div h3 {
+
+/* ===========================
+    PROJECTS
+=========================== */
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+.projects-titulo {
+    width: 100%;
+    background: #cbbbab; 
+    color: #200000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+}
+
+.projects-lista {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+.projects-navegar img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.projects-navegar h3 {
     text-align: center;
-    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 80px;
 }
+
+.projects-navegar img:hover {
+    transform: scale(1.02);
+    transition: transform 0.5s ease;
+    
+}
+
+
 
 /* ===========================
     CONTATO
 =========================== */
 
-#contato {
+#contact {
     display: flex;
-    align-items: center;   
-    gap: 40px;           
-    padding: 20px;
+    flex-direction: row-reverse;
+    min-height: 100vh;
+    max-height: 100vh;
 }
-.contato-conteudo {         /* lado direito*/
-    display: flex; 
+
+.contact-imagem {
+    width: 40%;
+    overflow: hidden;
+}
+
+.contact-imagem img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-left: #ffffff 25px solid;
+}
+
+.contact-conteudo {
+    width: 60%;
+    background: #cbbbab; 
+    padding: 120px 80px;
+    color: #ffffff;
+    display: flex;
     flex-direction: column;
-    text-align: left;
-    gap: 40px;
-    margin: auto;
-    max-width: 1200px;
-    padding: 20px;
+    justify-content: center;
+    border-left: #ffffff 50px solid;
 }
-.contato-imagem img {       /* lado esquerdo*/
-    width: 450px;       
-    max-width: 100%;    
-    border-radius: 15px;
+
+.contact-conteudo h1 {
+    font-family: Playfair Display, serif;
+    font-size: 84px;
+    font-weight: normal;
+    line-height: 1.1;
+    margin-bottom: 40px;
+}
+.contact-conteudo h2 {
+    font-family: Montserrat, sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #f3eee9;
+}
+
+.contact-conteudo ul {
+    margin-bottom: 80px;
+    list-style-position: inside;
+}
+
+.contact-conteudo li {
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+
+}
+
+#contact-dayane-felix {
+    font-family: Montserrat, sans-serif;
+    font-style: italic;
+    font-size: 32px;
+    color: #ffffff;
+    margin-top: 40px;
 }
 
 /* ===========================
     FOOTER
 =========================== */
+
+footer { 
+    background-color: #ffffff;  
+    padding: 20px 0; 
+}
 
 .footer-conteudo { 
     display: flex; 
