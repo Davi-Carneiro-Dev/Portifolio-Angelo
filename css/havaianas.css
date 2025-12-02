@@ -1,0 +1,259 @@
+/* ===========================
+   RESET DO NAVEGADOR
+=========================== */
+
+* { margin: 0; 
+    padding: 0; 
+    box-sizing: 
+    border-box; }
+
+/* ===========================
+   GLOBAL
+=========================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {  
+    font-family: Arial, sans-serif;
+    background-color: #cbbbab;
+    color: #222;    
+}
+
+main { 
+    background-color: #ffffff; 
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header {
+    margin: 40px;
+    background-color: #cbbbab;
+}
+
+.conteudo-header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px;  
+}
+
+.conteudo-header h2 {
+    font-family: "TT Ramilas", serif;
+    font-weight: normal;
+    font-size: 36px;
+    color: #45413d;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+.menu a { 
+    font-family: "TT Ramilas", serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 10px 15px;
+}
+
+.menu a:hover {
+    color: #cbbbab;
+}
+
+/* ===========================
+   MAIN
+=========================== */
+
+main {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+
+/* ===========================
+   PAGINA 1
+=========================== */
+
+#havaianas-pag-1 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+.havaianas-pag-1-conteudo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+    padding: 20px;
+    margin-left: 100px;
+}
+
+.havaianas-pag-1-conteudo h1 {
+    font-family: "TT Ramilas", serif;
+    font-weight: normal;
+    font-size: 56px;
+    color: #45413d;
+    margin-bottom: 60px;
+}
+
+.havaianas-pag-1-conteudo p {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 30px;
+    max-width: 400px;
+}
+
+.havaianas-pag-1-imagens {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.havaianas-pag-1-imagens img {
+    width: 850px;
+    height: 535px;
+    max-width: 100%;
+    min-width: none;
+}
+
+/* ===========================  
+    PAGINA 2
+=========================== */
+
+#havaianas-pag-2 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+#havaianas-pag-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 60px;
+}
+
+.havaianas-pag-2-imagens-1 img {
+    width: auto;
+    height: 750px;
+    max-width: 100%;
+    min-width: none;
+    object-fit: cover;
+}
+
+.havaianas-pag-2-imagens-2 img {
+    width: auto;
+    height: 750px;
+    max-width: 100%;
+    min-width: none;
+    object-fit: cover;
+}
+
+/* ===========================
+    FOOTER
+=========================== */
+
+footer {   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: radial-gradient(circle at center top, #a7988a, #cbbbab);
+    padding: 20px 0; 
+    border-top: #ffffff 25px solid;
+}
+
+.footer-conteudo { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+
+}
+
+.footer-dayane-felix h2 {
+    font-family: "TT Ramilas", serif;
+    font-weight: normal;
+    font-size: 48px;
+    color: #ffffff;
+    
+}
+
+.footer-portifolio-2025 h3 {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    font-style: italic;
+    color: #ffffff;
+    
+}
+
+.footer-secoes {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 20px;
+    gap: 40px
+}
+
+.footer-secoes h4 {
+    font-family: "TT Ramilas", serif;
+    font-weight: normal;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 15px;
+
+}
+
+.footer-secoes a {
+    font-family: "TT Ramilas", serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #928c86;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-secoes a:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+    color: #ffffff;
+}
+
+.footer-redes-sociais nav {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-projetos nav {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-contato nav {
+    display: flex;
+    flex-direction: column;
+    
+}

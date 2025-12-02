@@ -15,12 +15,15 @@ html {
     scroll-behavior: smooth;
 }
 
-body {  font-family: Arial, sans-serif;
-        background-color: #ffffff;
-        color: #222;    
-        border-radius: 15px;}
+body {  
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #222;    
+}
 
-main { background-color: #cbbbab; }
+main { 
+    background-color: #cbbbab; 
+}
 
 /* ===========================
    HEADER
@@ -40,7 +43,24 @@ header {
     padding: 0 20px;  
 }
 
-.menu a { padding: 10px 15px;}
+.conteudo-header h2 {
+    font-family: "TT Ramilas", serif;
+    font-weight: normal;
+    font-size: 36px;
+    color: #45413d;
+}
+
+.menu a { 
+    font-family: "TT Ramilas", serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: #928c86;
+    padding: 10px 15px;
+}
+
+.menu a:hover {
+    color: #cbbbab;
+}
 
 /* ===========================
    HOME PAGE
@@ -75,9 +95,11 @@ header {
 }
 
 .home-conteudo h1 {
+    font-family: "Silk Serif", serif;
+    font-weight: normal;
     font-size: 84px;
     line-height: 1.1;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .home-conteudo .sub {
@@ -88,8 +110,9 @@ header {
 }
 
 .home-conteudo .author {
-    font-size: 20px;
+    font-size: 30px;
     color: #fff;
+    font-style: italic;
 }
 
 /* ===========================
@@ -124,8 +147,21 @@ header {
 }
 
 .about-lado-esquerdo-topo h2 {
-    font-size: 36px;
+    font-family: "TT Ramilas", serif;
+    font-weight: normal;
+    font-size: 64px;
+    color: #45413d;
     margin-bottom: 20px;
+}
+
+.sub {
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: #45413d;
+    line-height: 1.6;
+    max-width: 500px;
+    max-height: 80vh;
 }
 
 .about-listas {
@@ -134,9 +170,16 @@ header {
 }
 
 .about-lista h4 {
+    font-family: "TT Ramilas", serif;
+    font-weight: normal;
     font-size: 20px;
+    color: #45413d;
     margin-bottom: 15px;
 
+}
+
+.about-lista ul {
+    list-style-position: inside;
 }
 
 .about-lado-direito {
@@ -169,12 +212,17 @@ header {
 .projects-titulo {
     width: 100%;
     background: #cbbbab; 
-    color: #200000;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 80px;
+}
+
+.projects-titulo h2 {
+    font-family: "TT Ramilas", serif;
+    font-weight: normal;
+    font-size: 64px;
+    color: #ffffff;
 }
 
 .projects-lista {
@@ -194,6 +242,10 @@ header {
 }
 
 .projects-navegar h3 {
+    font-family: "TT Ramilas", serif;
+    font-weight: normal;
+    font-size: 24px;
+    color: #45413d;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 80px;
@@ -242,7 +294,7 @@ header {
 }
 
 .contact-conteudo h1 {
-    font-family: Playfair Display, serif;
+    font-family: "TT Ramilas", serif;
     font-size: 84px;
     font-weight: normal;
     line-height: 1.1;
@@ -282,9 +334,10 @@ header {
     FOOTER
 =========================== */
 
-footer { 
-    background-color: #ffffff;  
+footer {   
+    background: radial-gradient(circle at center top, #a7988a, #cbbbab);
     padding: 20px 0; 
+    border-top: #ffffff 25px solid;
 }
 
 .footer-conteudo { 
@@ -295,11 +348,20 @@ footer {
 
 }
 
-.footer-dayane-felix {
+.footer-dayane-felix h2 {
+    font-family: "TT Ramilas", serif;
+    font-weight: normal;
+    font-size: 48px;
+    color: #ffffff;
     
 }
 
-.footer_portifolio-2025 { 
+.footer-portifolio-2025 h3 {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    font-style: italic;
+    color: #ffffff;
     
 }
 
@@ -309,6 +371,31 @@ footer {
     text-align: left;
     padding: 20px;
     gap: 40px
+}
+
+.footer-secoes h4 {
+    font-family: "TT Ramilas", serif;
+    font-weight: normal;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 15px;
+
+}
+
+.footer-secoes a {
+    font-family: "TT Ramilas", serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #928c86;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-secoes a:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+    color: #ffffff;
 }
 
 .footer-redes-sociais nav {
