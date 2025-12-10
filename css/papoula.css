@@ -83,25 +83,32 @@ main {
    PAGINA 1
 =========================== */
 
-#havaianas-pag-1 {
+#papoula-pag-1 {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     max-height: 100vh;
 }
 
-.havaianas-pag-1-conteudo {
+.papoula-pag-1-conteudo {
     flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.papoula-pag-1-conteudo-texto {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
     text-align: left;
-    padding: 20px;
-    margin-left: 100px;
+    gap: 100px;
 }
 
-.havaianas-pag-1-conteudo h1 {
+.papoula-pag-1-conteudo-texto h1 {
     font-family: "TT Ramilas", serif;
     font-weight: normal;
     font-size: 56px;
@@ -109,7 +116,7 @@ main {
     margin-bottom: 60px;
 }
 
-.havaianas-pag-1-conteudo p {
+.papoula-pag-1-conteudo-texto p {
     font-family: Arial, sans-serif;
     font-size: 20px;
     color: #222;
@@ -117,7 +124,12 @@ main {
     max-width: 400px;
 }
 
-.havaianas-pag-1-imagens {
+.papoula-pag-1-conteudo-texto img {
+    width: 650px;
+    height: auto;
+}
+
+.papoula-pag-1-conteudo-foto-direita {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -127,49 +139,37 @@ main {
     margin-top: 40px;
 }
 
-.havaianas-pag-1-imagens img {
+.papoula-pag-1-conteudo-foto-direita img{
     width: 850px;
-    height: 535px;
-    max-width: 100%;
-    min-width: none;
+    height: auto;
 }
 
 /* ===========================  
     PAGINA 2
 =========================== */
 
-#havaianas-pag-2 {
+#papoula-pag-2 {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     max-height: 100vh;
 }
 
-#havaianas-pag-2 {
+.papoula-pag-2-conteudo {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 60px;
-    margin-top: 60px;
 }
 
-.havaianas-pag-2-imagens-1 img {
-    width: auto;
-    height: 750px;
+.papoula-pag-2-conteudo img {
+    width: 1350px;
+    height: 425px;
     max-width: 100%;
-    min-width: none;
-    object-fit: cover;
 }
 
-.havaianas-pag-2-imagens-2 img {
-    width: auto;
-    height: 750px;
-    max-width: 100%;
-    min-width: none;
-    object-fit: cover;
-}
 
 /* ===========================
     FOOTER
